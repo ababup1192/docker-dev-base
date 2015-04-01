@@ -3,8 +3,8 @@ MAINTAINER ababup1192 ababup1192@gmail.com
 
 # Install packages
 RUN apt-get update && apt-get install -y software-properties-common
-RUN add-apt-repository ppa:git-core/ppa ppa:pi-rho/dev
-RUN apt-get install -y openssh-server zsh vim git curl autoconf tar wget \
+RUN add-apt-repository ppa:git-core/ppa && add-apt-repository ppa:pi-rho/dev
+RUN apt-get update && apt-get install -y openssh-server zsh vim git curl autoconf tar wget \
   zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev \
   sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev \
   python-software-properties libffi-dev tmux
